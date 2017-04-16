@@ -1,0 +1,462 @@
+/*
+content开始*/
+.content {
+    border-right: 1px solid #232323;
+    height: 221px;
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    padding-top: 60px;
+}
+
+.content h2 {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.4em;
+}
+
+.content .content_txt {
+    margin: 0 auto;
+    width: 600px;
+    font-size: 1.95em;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+}
+
+.more {
+    margin: 0 auto;
+    width: 130px;
+}
+
+.more span {
+    float: left;
+    font-size: 20px;
+    font-weight: 900;
+}
+dt{
+    padding: 10px 0;
+}
+.more h2 {
+    line-height: 25px;
+    float: left;
+}
+
+.more a {
+    color: #fff;
+}
+
+/*content结束*/
+
+/*mainnav开始*/
+.mainnav{
+    height: 430px;
+    border: 1px solid #232323;
+    position: relative;
+}
+.mainnav img{
+    width: 1335px;
+    height: 430px;
+}
+ .txt{
+    font-family: "ApercuRegular", Helvetica, Arial, sans-serif;
+    height: 100px;
+    width: 190px;
+    position: absolute;
+    bottom: 16px;
+    left: 20px;
+    color: #fff;
+
+}
+ .cc{
+    font-size: 14px;
+}
+.redb{
+    line-height: 30px;
+    margin-top:10px;
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+/*mainnav结束*/
+/*intro开始*/
+.intro{
+    width: 1336px;
+    height: 432px;
+    border-right: 1px solid #232323;
+    position: relative;
+}
+
+.in-left{
+    width: 667px;
+    height: 432px;
+    position: relative;
+}
+.in-right{
+    position: relative;
+    width: 668px;
+    height: 432px;
+}
+.in-left img{
+    width: 667px;
+    height: 432px;
+}
+.in-right img{
+    width: 668px;
+    height: 432px;
+}
+/*intro结束*/
+/*content开始*/
+/*content结束*/
+/*footernav开始*/
+.footernav{
+    height: 863px;
+    border-right: 1px solid #232323;
+}
+.footernav .fn-left{
+    position: relative;
+    width: 668px;
+}
+.footenav .fn-right{
+    width: 666px;
+}
+.footernav .fn-left-top{
+    position: relative;
+}
+.rightImg{
+    position: relative;;
+}
+.footernav .fn-left-top img{
+    height: 432px;
+    width: 668px;
+}
+.footernav .fn-left-bottom{
+    position: relative;
+}
+.footernav .fn-left-bottom  img{
+    height: 431px;
+    width: 668px;
+}
+.footernav .fn-right{
+    position: relative;
+}
+.footernav .fn-right img{
+    height: 863px;
+    width: 667px;
+}
+
+.footernav .fn-right .rightImg{
+    font-family: "ApercuRegular", Helvetica, Arial, sans-serif;
+    height: 100px;
+    width: 20px;
+    position: absolute;
+    bottom: 16px;
+    left: 20px;
+    color: #fff;
+}
+.joy{
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+.coc{
+    line-height: 30px;
+    margin-top:10px;
+    font-size: 48px;
+    letter-spacing: 3px;
+}
+/*footernav结束*/
+/*content开始*/
+/*content结束*/
+/*mark开始*/
+.mark{
+    padding-top: 20px;
+    width: 1334px;
+    height: 410px;
+    border: 1px solid #232323;
+    background-color: #000;
+}
+.mark .list{
+    margin-left: 20px;
+}
+.mark .list li {
+    float: left;
+}
+/*mark结束*/
+/*content开始*/
+/*content结束*/
+/*footer开始*/
+.footer{
+    width: 1334px;
+    text-align: center;
+    border: 1px solid #232323;
+    padding-top: 70px;
+    height: 255px;
+    background-color: #000;
+
+}
+.footer .footer-top dl{
+    margin-left: 80px;
+    float: left;
+    padding: 0  40px;
+    color: #fff;
+}
+.footer .footer-top dl h3{
+    font-size: 18px;
+}
+.footer .footer-top dt{
+    padding: 2px 0;
+    font-size: 14px;
+}
+.footer .footer-top .span{
+    font-family: "ApercuRegular", Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    border-bottom: 2px solid #fff;
+    width: 30px;
+    margin: 20px auto;
+}
+.footer .footer-bottom{
+    height: 448px;
+    border-bottom: 1px solid #232323;
+}
+/*footer结束*/
+/*comment开始*/
+.comment{
+    border: 1px solid #232323;
+    width: 1334px;
+    padding-top: 70px;
+    height: 378px;
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+.comment dl .dou{
+    font-size: 60px;
+}
+.comment dl{
+    margin-top: 37px;
+    float: left;
+    margin-left: 50px;
+    width: 350px;
+    padding: 0 20px;
+}
+.comment h3{
+    font-size: 1.95em;
+    line-height: 1.2em;
+}
+.comment .span{
+    font-family: "ApercuRegular", Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    border-bottom: 2px solid #fff;
+    margin: 20px auto;
+    width: 30px;
+}
+/*comment结束*/
+/*hero-bg-vid开始*/
+.vedio{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    background-size: cover;
+    background-color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: none;"
+}
+/*hero-bg-vid结束*/
+/*first开始*/
+.first{
+    position: relative;
+    height: 794px;
+}
+.first img{
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    width: 38px;
+    height: 38px;
+}
+.first .passage {
+    color: #fff;
+    width: 260px;
+    height: 200px;
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    margin-top: -100px;
+    z-index: 1;
+}
+.first .passage p{
+    padding-bottom: 10px ;
+    font-family: "ApercuRegular", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.4em;
+}
+.first .passage a{
+    color: #fff;
+    font-size: 12px;
+}
+.passage s{
+    font-family: "ApercuRegular", Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    border-bottom: 2px solid #fff;
+    width: 70px;
+}
+.select{
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+}
+.select a{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 900;
+}
+.select a:hover{
+    color: #eee;
+    opacity: 0.5;
+}
+/*first结束*/
+/*blank开始*/
+.blank{
+    position: relative;
+    height: 794px;
+    background:rgba(0,0,0,.7);
+}
+.blank a{
+
+}
+.blank img{
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    width: 38px;
+    height: 38px;
+}
+.box{
+    position: relative;
+    background-color: #000;
+    z-index: 100;
+}
+.blank .blank-ms {
+    font-family: "ApercuRegular", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.9em;
+    left: 50%;
+    margin-left:-250px;
+    height: 200px;
+    width: 500px;
+    position: fixed;
+    bottom: 50%;
+    margin-top: -100px;
+    color: #fff;
+}
+.reach{
+    font-size: 27px;
+}
+.blank .blank-ms dl{
+    float: left;
+}
+.none{
+    display: none;
+}
+/*blank结束*/
+img:hover{
+    transform: scale(1.01,1.01);
+    opacity: 0.7;
+    transition:.4s all;
+}
+img{
+    width: 100%;
+    height:100% ;
+}
+/*右侧导航开始*/
+#box2{
+    /*margin-left: 30px;*/
+    width:88px;
+    height:800px;
+    background-color: black;
+    position: fixed;
+    right: 0;
+    top: 0;
+    border-left:1px solid #232323;
+    z-index: 99999;
+}
+#anniu{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top:20px;
+    right: 30px;
+    cursor: pointer;
+
+}
+#anniu .huan{
+    position: fixed;
+    right: 26px;
+    top: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 66px;
+    margin-left: 30px;
+    margin-top:10px;
+    transition: background 0s 0.3s;
+    display: none;
+    cursor: pointer;
+}
+
+#anniu .current a{
+    display: block;
+    border-top: 2px solid #fff;
+    width: 30px;
+    margin-top: 6px;
+    margin-left: 30px;
+    cursor: pointer;
+
+    /*transition: background 0.3s;*/
+}
+#box2 .last{
+    color: white;
+    display: block;
+    margin-top: 220px;
+    position: absolute;
+    bottom: 50px;
+    left: 25px;
+    width:30px;
+    transform: rotate(270deg);
+    font-size: 25px;
+}
+#small-left a{
+    line-height: 1.9em;
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 900;
+}
+#small-left span{
+    display: block;
+    margin-left: 15px;
+    /*margin-top: 10px;*/
+    font-weight: 900;
+    display: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+#small-left{
+    margin-top: 20px;
+}
+
+#small-left span:hover{
+    border-bottom: 3px solid #fff;
+
+}
+#small-left a:hover{
+    opacity: 0.7;
+}
+/*右侧导航结束*/
+
+
+
+

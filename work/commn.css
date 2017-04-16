@@ -1,0 +1,42 @@
+/*css初始化 B */
+/*清除浏览器默认的margin和padding*/
+body, html, p, h3, ul, li a ,img {
+    margin: 0;
+    padding: 0;
+}
+/*去掉其它默认样式*/
+ul , li {
+    list-style: none;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+.fl {
+    float: left;
+}
+p{
+    font-family:"ApercuRegular", Helvetica, Arial, sans-serif ;
+    font-size: 2.8em;
+    line-height: 1.1;
+    text-rendering: optimizelegibility;
+    font-weight: 500;
+    color: #ffffff;
+}
+h3{
+    color: #ffffff;
+    font-family: "ApercuBold", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    position: absolute;
+    left: 30px;
+    bottom: 150px;
+}
+a{
+    display: inline-block;
+}
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+}

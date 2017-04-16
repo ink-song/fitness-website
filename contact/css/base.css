@@ -1,0 +1,53 @@
+/*css初始化 B */
+/*清除浏览器默认的margin和padding*/
+body, html, p, h1, h2, h3, ul, li, ol, dl, dt, dd, button, input {
+    margin: 0;
+    padding: 0;
+}
+/*去掉其它默认样式*/
+ul , li {
+    list-style: none;
+}
+a {
+    color:#fff;
+}
+a:hover {
+    color:#fff;
+}
+body {
+    background-color: #fff;
+    color:white;
+    font: 12px/1.5 "ApercuRegular",Helvetica,Arial,sans-serif;
+}
+input ,button,img {
+    border: none;
+}
+input {
+    outline-style:none;
+}
+img {
+    vertical-align: middle;
+}
+b , s {
+    font-weight: 400;
+    text-decoration: none;
+}
+/*浮动*/
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.clearfix:after {
+    content: '';
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+/*css初始化 E */
+
+

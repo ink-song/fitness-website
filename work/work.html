@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="commn.css"/>
+    <link rel="stylesheet" href="work.css"/>
+    <script src="jquery-1.12.4.js"></script>
+    <script src="work.js"></script>
+
+    <title>work</title>
+</head>
+<body>
+    <div class="box1 ">
+        <div class="box1-l fl">
+            <a href="#">
+                <img src="images/1.jpg" alt=""/>
+                <span class="logo">
+                    <img src="images/logo.png"/>
+                </span>
+                <p>Commn
+                    <br>
+                    Bank
+                </p>
+            </a>
+        </div>
+        <div class="box1-r fl">
+            <a href="#">
+                <img src="images/2.jpg" alt=""/>
+
+                <p>Thirdi
+                    <br>
+                    Group
+                </p>
+            </a>
+        </div>
+    </div>
+    <div class="box2">
+        <div class="box2-l fl">
+            <div class="box2-l-s">
+                <a href="#">
+                    <img src="images/3.jpg" alt=""/>
+
+                    <p class="box2-l-1">
+                        Evergen
+                        <br>
+                        Energy
+                    </p>
+                </a>
+            </div>
+            <div class="box2-l-x">
+                <a href="#">
+                    <img src="images/4.jpg" alt=""/>
+
+                    <h3>Content</h3>
+
+                    <p class="box2-l-2">
+                        Red
+                        <br>
+                        Bull
+                    </p>
+                </a>
+            </div>
+        </div>
+        <div class="box2-r fl">
+            <a href="#">
+                <img src="images/5.jpg" alt=""/>
+
+                <p>
+                    General
+                    <br>
+                    Pants
+                </p>
+            </a>
+        </div>
+    </div>
+    <div class="box3">
+        <ul>
+            <li class="fp"><a href="#">
+                <h3>Digital</h3>
+
+                <p>
+                    Collective
+                    <br/>
+                    Hub
+                </p>
+                <img src="images/6.jpg" alt=""/>
+            </a></li>
+            <li class="fp"><a href="#">
+                <h3>Content</h3>
+
+                <p>
+                    Seafolly
+                    <br/>
+                    Swimwear
+                </p>
+                <img src="images/7.jpg" alt=""/>
+            </a></li>
+            <li class="fp"><a href="#">
+                <h3>Digital</h3>
+
+                <p>
+                    Thaiger
+                    <br/>
+                    Temple
+                </p>
+                <img src="images/8.jpg" alt=""/>
+            </a></li>
+            <li class="fp"><a href="#">
+                <h3>Content</h3>
+
+                <p>
+                    John
+                    <br/>
+                    West
+                </p>
+                <img src="images/9.jpg" alt=""/>
+            </a></li>
+            <li class="fp"><a href="#">
+                <h3>Content</h3>
+
+                <p>
+                    Fox
+                    <br/>
+                    Sports
+                </p>
+                <img src="images/10.jpg" alt=""/>
+            </a></li>
+            <li class="fp"><a href="#">
+                <h3>Digital</h3>
+
+                <p>
+                    Gary
+                    <br/>
+                    People
+                </p>
+                <img src="images/11.jpg" alt=""/>
+            </a></li>
+            <li class="fp"><a href="#">
+                <h3>Digital</h3>
+
+                <p>
+                    Maslow
+                    <br/>
+                    &Co
+                </p>
+                <img src="images/12.jpg" alt=""/>
+            </a></li>
+            <li class="fp"><a href="#">
+                <h3>Content</h3>
+
+                <p>
+                    Mick
+                    <br/>
+                    Fanning
+                </p>
+                <img src="images/13.jpg" alt=""/>
+            </a></li>
+        </ul>
+    </div>
+    <div id="box" style="height: 800px">
+        <div id="small-left">
+            <span><a href="../index/index.html">HOME</a></span><br>
+            <span><a href="../direction/direction.html">Our Directors</a></span>
+            <span><a href="../studio/studio.html">Studio</a></span><br>
+            <span><a href="../contact/contact.html">Contact</a></span>
+        </div>
+        <div id="anniu">
+                <span class="current">
+                    <a></a><a></a> <a></a>
+                </span>
+            <span class="huan">&times;</span>
+        </div>
+
+        <span class="last">DeRepublica&nbsp;——&nbsp;<b style="font-size: 16px; font-weight: normal">Our&nbspWork</b></span>
+    </div>
+    <!--blank开始-->
+
+
+    <!--blank结束-->
+
+    <script>
+        $(function(){
+            $(".current").click(function(){
+                $(this).hide(500).next().show(500).parent() .parent().animate({"width":"300px"},1000);
+            })
+            $(".current").click(function(){
+                $("#small-left span").show(1000)
+            })
+            $(".huan").click(function(){
+                $("#small-left span").hide(1000);
+            })
+            $(".huan").click(function(){
+                $(this).hide(500).prev().show(500).parent().parent().animate({"width":"90px"},1000);
+            })
+        })
+
+        var tBox = document.getElementById("tBox");
+        Window.onscroll = function () {
+            if (myScroll().top > tBox.offsetHeight) {
+                tBox.className = "fixed";
+                //由于导航定位后脱标，这时为了防止主体部分突兀的插入，给主体部分设置marginTop
+                // mainPart.style.marginTop = 10 + navBar.offsetHeight + "px";
+            }
+        }
+
+        function myScroll() {
+            return {
+                top: window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0,
+                left: window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft || 0
+            };
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>direction</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+       
+        .boom2 a {
+            color: white;
+        }
+
+        .box2 a {
+            color: white;
+        }
+
+        .box3 a {
+            color: white;
+        }
+
+        .reach {
+            width: 240px;
+            height: 110px;
+            position: fixed;
+            z-index: 1;
+            top: 215px;
+            left: 248px;
+            /*background-color: yellow;*/
+        }
+
+        .reach p {
+            font-size: 45px;
+            font-family: "黑体";
+            color: white;
+            font-weight: bolder;
+            position: fixed;
+        }
+
+        .boom {
+            width: 214px;
+            height: 232px;
+            position: fixed;
+            z-index: 1;
+            top: 230px;
+            left: 490px;
+
+        }
+
+        .boom p {
+            font-size: 20px;
+            font-family: "黑体";
+            color: white;
+            font-weight: bolder;
+        }
+
+        .boom2 {
+            position: fixed;
+            top: 280px;
+        }
+
+        .boom3 {
+            position: fixed;
+            top: 345px;
+        }
+
+        .box {
+            width: 214px;
+            height: 232px;
+            position: fixed;
+            z-index: 1;
+            top: 230px;
+            left: 766px;
+        }
+
+        .box p {
+            font-size: 15px;
+            font-family: "黑体";
+            color: white;
+        }
+
+        .box2 p {
+            line-height: 20px;
+        }
+
+        .box3 {
+            position: fixed;
+            top: 350px;
+            font-weight: bolder;
+        }
+
+        .regret1 {
+            width: 630px;
+            height: 430px;
+            overflow: hidden;
+            float: left;
+            position: absolute;
+            background-color: #000;
+            z-index: 1;
+        }
+
+        .regret11 {
+            width: 630px;
+            height: 430px;
+            background-color: #000;
+            overflow: hidden;
+            float: left;
+            position: absolute;
+            z-index: 2;
+            left: 630px;
+        }
+        .vedio{
+            position: fixed;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background-size: cover;
+            background-color: rgb(0, 0, 0);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-image: none;"
+        }
+
+        .regret11 {
+            width: 630px;
+            height: 430px;
+            overflow: hidden;
+            float: left;
+            position: absolute;
+            background-color: #000;
+            z-index: 2;
+            left: 630px;
+        }
+
+        .regret2 {
+            width: 630px;
+            height: 430px;
+            overflow: hidden;
+            background-color: #000;
+            float: left;
+            position: absolute;
+            z-index: 2;
+            top: 430px;
+        }
+
+        .regret3 {
+            width: 630px;
+            height: 430px;
+            background-color: #000;
+            overflow: hidden;
+            float: left;
+            position: absolute;
+            z-index: 2;
+            top: 430px;
+            left: 630px;
+        }
+
+        .regret4 {
+            width: 630px;
+            height: 430px;
+            overflow: hidden;
+            background-color: #000;
+            float: left;
+            position: absolute;
+            z-index: 2;
+            top: 860px;
+        }
+
+        .regret5 {
+            width: 630px;
+            height: 430px;
+            overflow: hidden;
+            background-color: #000;
+            float: left;
+            position: absolute;
+            z-index: 2;
+            top: 1290px;
+        }
+
+        .regret6 {
+            width: 630px;
+            height: 860px;
+            overflow: hidden;
+            float: left;
+            position: absolute;
+            background-color: #000;
+            z-index: 2;
+            left: 630px;
+            top: 860px;
+        }
+
+        img:hover {
+            transform: scale(1.1, 1.1);
+            opacity: 0.8;
+            transition: .4s all;
+        }
+
+        img {
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+        }
+
+        /*	<!-- -----------------------------------------------------------------------------------------------------*/
+        .left-1 {
+            height: 40px;
+            width: 40px;
+            /*background-color: black;*/
+            position: fixed;
+            left: 30px;
+            top: 20px;
+            z-index: 2;
+        }
+
+        .left-2 {
+            height: 40px;
+            width: 40px;
+            position: fixed;
+            left: 30px;
+            top: 600px;
+            z-index: 2;
+            border: 2px solid white;
+            opacity: 0.3;
+        }
+
+        .touming {
+            width: 1200px;
+            height: 800px;
+            overflow: hidden;
+            float: left;
+            position: absolute;
+            /*z-index: 1;*/
+            top: 1720px;
+            opacity: 0.8;
+        }
+
+        .regret{
+            background-color: #000;
+        }
+        .regret1 span {
+            position: absolute;
+            left: -30px;
+            top: 250px;
+            font-size: 40px;
+            color: white;
+            font-weight: bolder;
+            transform: rotate(-90deg);
+        }
+        .regret11 span {
+            position: absolute;
+            left: 30px;
+            top: 320px;
+            font-size: 40px;
+            color: white;
+            font-weight: bolder;
+        }
+
+        .regret11 h5 {
+            position: absolute;
+            left: 30px;
+            top: 300px;
+            color: white;
+        }
+
+        .regret2 span {
+            position: absolute;
+            left: 30px;
+            top: 280px;
+            font-size: 40px;
+            color: white;
+            font-weight: bolder;
+        }
+
+        .regret2 h5 {
+            position: absolute;
+            left: 30px;
+            top: 310px;
+            color: white;
+        }
+
+        .regret3 span {
+            position: absolute;
+            left: 30px;
+            top: 320px;
+            font-size: 40px;
+            color: white;
+            font-weight: bolder;
+        }
+
+        .regret3 h5 {
+            position: absolute;
+            left: 30px;
+            top: 305px;
+            color: white;
+        }
+
+        .regret4 span {
+            position: absolute;
+            left: 30px;
+            top: 320px;
+            font-size: 40px;
+            color: white;
+            font-weight: bolder;
+        }
+
+        .regret4 h5 {
+            position: absolute;
+            left: 30px;
+            top: 305px;
+            color: white;
+        }
+
+        .regret5 span {
+            position: absolute;
+            left: 30px;
+            top: 320px;
+            font-size: 40px;
+            color: white;
+            font-weight: bolder;
+        }
+
+        .regret5 h5 {
+            position: absolute;
+            left: 30px;
+            top: 305px;
+            color: white;
+        }
+
+        .regret6 span {
+            position: absolute;
+            left: 10px;
+            top: 650px;
+            font-size: 40px;
+            color: white;
+            font-weight: bolder;
+            transform: rotate(-90deg);
+        }
+
+    </style>
+    <link href="css/css.css" rel="stylesheet"/>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+
+        var yiru=document.getElementsByTagName("regret1");
+        yiru.onmouseover=function(){
+
+        }
+        $(function () {
+            $(".current").click(function () {
+
+                $(this).hide(500).next().show(500).parent().parent().animate({"width": "240px"}, 1000);
+
+            })
+
+            $(".current").click(function () {
+
+
+                $("#small-left span").show(1000)
+
+
+            })
+            $(".huan").click(function () {
+
+                $("#small-left span").hide(1000);
+
+
+            })
+
+            $(".huan").click(function () {
+                $(this).hide(500).prev().show(500).parent().parent().animate({"width": "90px"}, 1000);
+            })
+
+        })
+
+
+    </script>
+</head>
+<body>
+<div class="hero-bg-vid" data-vide-bg="mp4: http://d2dabun8ogk5x1.cloudfront.net/wp-content/themes/derepublica/library/video/home-bg.mp4, webm: http://d2dabun8ogk5x1.cloudfront.net/wp-content/themes/derepublica/library/video/home-bg.webm, ogv: http://d2dabun8ogk5x1.cloudfront.net/wp-content/themes/derepublica/library/video/home-bg.ogv, poster:http://d2dabun8ogk5x1.cloudfront.net/wp-content/themes/derepublica/library/video/home-bg.jpg " data-vide-options="bgColor: #000000, loop: true, muted: true, position: 50% 50%, posterType: jpg">
+    <div class="vedio">
+        <video autoplay="" loop="" preload="auto" muted="" style="margin: auto; position: absolute; z-index: -1; top: 50%; left: 50%; transform: translate(-50%, -50%); visibility: visible; opacity: 1; width: 1425px; height: auto;">
+            <source src="http://d2dabun8ogk5x1.cloudfront.net/wp-content/themes/derepublica/library/video/home-bg.mp4" type="video/mp4">
+            <source src="http://d2dabun8ogk5x1.cloudfront.net/wp-content/themes/derepublica/library/video/home-bg.webm" type="video/webm">
+            <source src="http://d2dabun8ogk5x1.cloudfront.net/wp-content/themes/derepublica/library/video/home-bg.ogv" type="video/ogg">
+        </video>
+    </div>
+</div>
+
+
+
+<!--左上角的图标 -->
+<div class="left-1">
+    <img src="images/logo.png" alt=""/>
+</div>
+<!--左下角的图标 -->
+<!--<button class="left-2"></button>-->
+<!--背景-->
+<div class="reach">
+    <p>Reach Out<br/>Today</p>
+</div>
+<div class="boom">
+    <div class="boom1">
+        <p>Contact Details<br/>___</p>
+    </div>
+    <div class="boom2">
+        <p>+61294407338<br/><a href="#">info@derepublica.com.au</a></p>
+    </div>
+    <div class="boom3">
+        <p>20 Dale Street,<br/>Brookvale NDW 2100<br/>Australia</p>
+    </div>
+</div>
+
+<div class="box">
+    <div class="box1">
+        <p>Join Us<br/>___</p>
+    </div>
+    <div class="box2">
+        <p><a href="#">Front-end Developer</a>
+            <br/><a href="#">Full&nbsp;Stack&nbsp;Developer/Tech&nbsp;Lead<br/>shooter/Editor/Producer</a>
+        </p>
+    </div>
+    <div class="box3">
+        <p><a href="#">Project Plasnner</a><br/><a href="#">Sign up to our newsletter</a></p>
+    </div>
+    <!--图片部分-->
+</div>
+<div class="regret" id="regret-boom">
+    <div class="regret1">
+        <img src="images/11.jpg" alt=""/>
+        <span>Joy <br/>Collective</span>
+        <video src="">
+
+        </video>
+    </div>
+    <div class="regret11">
+        <img src="images/in-left.jpg" alt=""/>
+        <h5>Director Profile</h5>
+        <span>Nima<br/>Nabili Rad</span>
+    </div>
+    <div class="regret2">
+        <img src="images/22.jpg" alt=""/>
+        <h5>Director Profile</h5>
+        <span><br/>Stefan<br/>Hunt</span>
+    </div>
+    <div class="regret3">
+        <img src="images/33.jpg" alt=""/>
+        <h5>Director Profile</h5>
+        <span>Terence<br/>Connors</span>
+    </div>
+    <div class="regret4">
+        <img src="images/44.jpg" alt=""/>
+        <h5>Director Profile</h5>
+        <span>Mitch <br/>Green</span>
+    </div>
+    <div class="regret5">
+        <img src="images/55.jpg" alt=""/>
+        <h5>Director Profile</h5>
+        <span>Dan<br/> Mansour</span>
+    </div>
+    <div class="regret6">
+        <img src="images/66.jpg" alt=""/>
+        <span>Joy <br/>Collective</span>
+
+
+    </div>
+</div>
+<!------------------------------------------------->
+
+
+<div id="box">
+    <div id="small-left">
+        <span><a href="../index/index.html">HOME</a></span><br />
+        <span><a href="../work/work.html">Our Work</a></span><br>
+        <span><a href="../studio/studio.html">Studio</a></span><br>
+        <span><a href="../contact/contact.html">Contact</a></span>
+    </div>
+    <!--按钮盒子-->
+    <div id="anniu">
+            <span class="current">
+                <a></a><a></a> <a></a>
+            </span>
+        <span class="huan">&times;</span>
+    </div>
+
+    <span class="last">DeRepublica&nbsp;——&nbsp;<b style="font-size: 16px; font-weight: normal">Navigate</b></span>
+
+</div>
+
+
+<div class="touming"></div>
+
+<!------------------------------------------------->
+</body>
+</html>

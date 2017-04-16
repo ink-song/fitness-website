@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>contact</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <script src="jquery-1.12.4.js"></script>
+    <script>
+              $(function(){
+            $(".current").click(function(){
+                $(this).hide(500).next().show(500).parent() .parent().animate({"width":"270px"},1000);
+            })
+            $(".current").click(function(){
+                $("#small-left span").show(1000);
+            })
+            $(".huan").click(function(){
+                $("#small-left span").hide(1000);
+            })
+            $(".huan").click(function(){
+                $(this).hide(800).prev().show(800).parent().parent().stop().animate({"width":"90px"},1000);
+            })
+        })
+
+        var tBox = document.getElementById("tBox");
+        Window.onscroll = function () {
+            if (myScroll().top > tBox.offsetHeight) {
+                tBox.className = "fixed";
+                //由于导航定位后脱标，这时为了防止主体部分突兀的插入，给主体部分设置marginTop
+                // mainPart.style.marginTop = 10 + navBar.offsetHeight + "px";
+            }
+        }
+
+       
+    </script>
+</head>
+<body>
+<!--last-page-B-->
+<div class="last-page">
+    <!--last-page-logo-B-->
+        <div class="last-page-logo">
+            <div class="last-page-top-logo">
+                <a href="#"><img src="images/logo.png" alt=""/></a>
+            </div>
+    <!--last-page-logo-E-->
+
+
+    <!--last-page-video-B-->
+            <div class="hero-bg-vid"
+                 data-vide-bg="mp4: http://d2dabun8ogk5x1.cloudfront.net/wp-content/themes/derepublica/library/video/home-bg.mp4, webm: http://d2dabun8ogk5x1.cloudfront.net/wp-content/themes/derepublica/library/video/home-bg.webm, ogv: http://d2dabun8ogk5x1.cloudfront.net/wp-content/themes/derepublica/library/video/home-bg.ogv, poster:http://d2dabun8ogk5x1.cloudfront.net/wp-content/themes/derepublica/library/video/home-bg.jpg "
+                 data-vide-options="bgColor: #000000, loop: true, muted: true, position: 50% 50%, posterType: jpg">
+                <div class="vedio">
+                    <video autoplay="" loop="" preload="auto" muted="" style="margin: auto; position: absolute; z-index: -1; top: 50%; left: 50%; transform: translate(-50%, -50%); visibility: visible; opacity: 1; width: 1425px; height: auto;">
+                        <source src="http://d2dabun8ogk5x1.cloudfront.net/wp-content/themes/derepublica/library/video/home-bg.mp4" type="video/mp4">
+                        <source src="http://d2dabun8ogk5x1.cloudfront.net/wp-content/themes/derepublica/library/video/home-bg.webm" type="video/webm">
+                        <source src="http://d2dabun8ogk5x1.cloudfront.net/wp-content/themes/derepublica/library/video/home-bg.ogv" type="video/ogg">
+                    </video>
+                </div>
+                <div class="blank w"></div>
+            </div>
+    <!--last-page-video-E-->
+    <!--last-page-help-B-->
+            <div class="last-page-help-logo">
+                <div class="help-logo-top">
+                    <p> Get in Touch</p>
+                </div>
+                <div class="help-logo-bottom">
+                    <h2>Contact<br>Us</h2>
+
+                </div>
+            </div>
+            <div class="last-page-help-link">
+                <p>How can we help?</p>
+                <div class="div-line-wrap">
+                    <span class="div-line"></span>
+                </div>
+                <p>
+                    <strong>Email</strong><br>
+                    <a href="#">info@derepublica.com.au</a><br>
+                </p>
+                <p class="phone">
+                    <strong>Phone</strong><br>
+                    <a href="#">+61 2 9440 7338</a>
+                </p>
+                <p>
+                    <strong>Address</strong><br>
+                    Suite 111,20 Dale St<br>
+                    Brookvale,NSW<br>
+                    2100 Australia<br>
+                    <a href="#">View Map</a>
+                </p>
+                <div class="div-line-wrap">
+                    <span class="div-line"></span>
+                </div>
+                <p>
+                    <a href="#">Project Planner</a><br>
+                    <a href="#">Sign up to our newsletter</a>
+                </p>
+            </div>
+        </div>
+    <!--last-page-help-E-->
+    <!--last--logo-search-B-->
+    <!--右边显示搜索部分-->
+   
+         <div id="box2">
+            <div id="small-left">
+                <span><a href="../index/index.html">HOME</a></span><br>
+                <span><a href="../work/work.html">Our Work</a></span>
+                <span><a href="../direction/direction.html">Our Directors</a></span>
+                <span><a href="../studio/studio.html">Studio</a></span><br>
+            </div>
+            <!--按钮盒子-->
+            <div id = "anniu">
+                    <span class="current">
+                        <a></a><a></a> <a></a>
+                    </span>
+                <span class="huan">&times;</span>
+            </div>
+
+            <span class="last">DeRepublica&nbsp;——&nbsp;<b style="font-size: 20px; font-weight: normal">Navigate</b></span>
+
+            </div>
+            
+
+
+
+    
+       
+<!--last--logo-search-E-->
+    
+</div>
+<!--last-page-E-->
+
+
+
+
+
+</body>
+</html>
